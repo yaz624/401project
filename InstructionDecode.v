@@ -10,3 +10,5 @@ module InstructionDecode(
     assign rd = instruction[11:7];
     assign opcode = instruction[6:0];
 endmodule
+
+

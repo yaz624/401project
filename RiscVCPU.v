@@ -2,6 +2,15 @@ module RiscVCPU(
     input clk,
     input reset
 );
+
+
+/*R-type：用于算术运算、逻辑运算等。
+	•	I-type：用于立即数运算、数据传送等。
+	•	S-type：用于存储操作（如 SW 指令）。
+	•	B-type：用于分支跳转操作。
+	•	U-type：用于大立即数加载操作。
+	•	J-type：用于跳转指令。
+*/
     // 内部信号定义
     wire [31:0] pc, instruction, read_data1, read_data2, alu_result, mem_data;
     wire [4:0] rs1, rs2, rd;
